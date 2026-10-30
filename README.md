@@ -1,6 +1,6 @@
 # Burst Your Ideas Onboarding
 
-Claude Code plugin that guides a team member step by step through setting up the Burst Your Ideas agent stack.
+Plugin for Claude Code and Cowork that guides a team member step by step through setting up the Burst Your Ideas agent stack.
 
 ## What it covers
 
@@ -15,21 +15,40 @@ The plugin contains no credentials and never asks for them. Sign-in always happe
 
 ## Install
 
-Add the plugin from Anthropic's directory on claude.ai; Claude Code loads it through account sync. Then run:
+### Own marketplace (available now)
+
+This repository is also a marketplace named `byideas`, so the plugin can be installed before it is listed in Anthropic's directory.
+
+Claude Code:
+
+```
+/plugin marketplace add burstyourideas/byideas-onboarding
+/plugin install byideas-onboarding@byideas
+```
+
+Cowork: in **Customize > Plugins**, add the GitHub repository `burstyourideas/byideas-onboarding` as a marketplace and install `byideas-onboarding` from it. Alternatively, use **Add > Upload plugin** with a zip of this repository.
+
+### Anthropic directory
+
+Once listed, add it from **Discover** in **Customize > Plugins**. Claude Code loads it through account sync.
+
+## Use
 
 ```
 /byideas-onboarding:start
 ```
 
-or ask Claude to help you get set up with the Burst Your Ideas stack.
+or ask Claude to help you get set up with the Burst Your Ideas stack. In Cowork the guide skips the steps that only exist in Claude Code (workspace roots and automation routines).
 
 ## Contents
 
 ```
 .claude-plugin/plugin.json
+.claude-plugin/marketplace.json                 Own marketplace `byideas`
 commands/start.md
 skills/byideas-onboarding/SKILL.md
 skills/byideas-onboarding/references/plugins.md   Plugin catalog
+skills/byideas-onboarding/references/cowork.md     Cowork variants of each step
 skills/byideas-onboarding/references/spree.md     Spree skills and docs MCP
 ```
 

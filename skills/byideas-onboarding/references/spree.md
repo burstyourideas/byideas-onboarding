@@ -44,3 +44,14 @@ Claude Desktop / claude.ai: Settings, Connectors, **Add custom connector**, and
 paste `https://spreecommerce.org/docs/mcp`.
 
 Verify afterwards with `/mcp` that `spree-docs` is listed.
+
+## Cowork
+
+- **Docs MCP:** in Settings, Connectors, **Add custom connector**, paste
+  `https://spreecommerce.org/docs/mcp` (the Spree documentation lists this for
+  Claude.ai and Claude Desktop). No authentication is required.
+- **Skills:** the `/plugin` commands above do not exist in Cowork. The Spree
+  documentation does not describe a Cowork install path. The platform allows
+  adding a GitHub repository as a marketplace in **Customize > Plugins**, so
+  `spree/agent-skills` may be added there; say that this is untested and ask the
+  user to confirm the result. Do not use the `npx skills add` path in addition.

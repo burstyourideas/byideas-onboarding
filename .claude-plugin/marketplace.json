@@ -1,0 +1,16 @@
+{
+  "name": "byideas",
+  "description": "Burst Your Ideas onboarding plugin for Claude Code and Cowork.",
+  "owner": {
+    "name": "Burst Your Ideas",
+    "url": "https://github.com/burstyourideas"
+  },
+  "plugins": [
+    {
+      "name": "byideas-onboarding",
+      "source": "./",
+      "description": "Guided setup of the Burst Your Ideas agent stack: marketplace, plugins, ClickUp and GitHub connections, automation routines and optional Spree resources.",
+      "category": "productivity"
+    }
+  ]
+}
