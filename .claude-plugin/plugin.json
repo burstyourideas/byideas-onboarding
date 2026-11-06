@@ -1,7 +1,7 @@
 {
   "name": "byideas-onboarding",
-  "description": "Guided setup of the Burst Your Ideas agent stack: private marketplace, plugins, ClickUp and GitHub connections, workspace roots, automation routines and optional Spree documentation resources.",
-  "version": "0.1.0",
+  "description": "Guided setup of the Burst Your Ideas agent stack for Claude Code, Cowork and Cursor: marketplace, plugins, ClickUp and GitHub connections, automation routines and optional Spree resources.",
+  "version": "0.3.0",
   "author": {
     "name": "Burst Your Ideas",
     "url": "https://github.com/burstyourideas"

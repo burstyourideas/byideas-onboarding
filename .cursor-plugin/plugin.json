@@ -1,0 +1,21 @@
+{
+  "name": "byideas-onboarding",
+  "description": "Guided setup of the Burst Your Ideas agent stack for Claude Code, Cowork and Cursor: marketplace, plugins, ClickUp and GitHub connections, automation routines and optional Spree resources.",
+  "version": "0.3.0",
+  "author": {
+    "name": "Burst Your Ideas"
+  },
+  "homepage": "https://github.com/burstyourideas/byideas-onboarding",
+  "repository": "https://github.com/burstyourideas/byideas-onboarding",
+  "license": "MIT",
+  "keywords": [
+    "onboarding",
+    "setup",
+    "clickup",
+    "github",
+    "spree"
+  ],
+  "logo": ".claude-plugin/icon.png",
+  "skills": "./skills",
+  "commands": "./.cursor-plugin/commands/byideas-onboarding-start.md"
+}
