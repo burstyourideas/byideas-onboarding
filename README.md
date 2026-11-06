@@ -1,6 +1,6 @@
 # Burst Your Ideas Onboarding
 
-Plugin for Claude Code and Cowork that guides a team member step by step through setting up the Burst Your Ideas agent stack.
+Plugin for Claude Code, Cowork and Cursor that guides a team member step by step through setting up the Burst Your Ideas agent stack.
 
 ## What it covers
 
@@ -28,6 +28,8 @@ Claude Code:
 
 Cowork: in **Customize > Plugins**, add the GitHub repository `burstyourideas/byideas-onboarding` as a marketplace and install `byideas-onboarding` from it. Alternatively, use **Add > Upload plugin** with a zip of this repository.
 
+Cursor: copy this repository to `~/.cursor/plugins/local/byideas-onboarding` (a real copy, not a symlink to another folder) and run **Developer: Reload Window**. The command is `/byideas-onboarding-start`. `product` and `dev` already include `.cursor-plugin/plugin.json` in `burstyourideas/bystack-sdd`; copy `plugins/product` and `plugins/dev` the same way. Details are in `skills/byideas-onboarding/references/cursor.md`.
+
 ### Anthropic directory
 
 Once listed, add it from **Discover** in **Customize > Plugins**. Claude Code loads it through account sync.
@@ -38,17 +40,22 @@ Once listed, add it from **Discover** in **Customize > Plugins**. Claude Code lo
 /byideas-onboarding:start
 ```
 
-or ask Claude to help you get set up with the Burst Your Ideas stack. In Cowork the guide skips the steps that only exist in Claude Code (workspace roots and automation routines).
+In Cursor the command is `/byideas-onboarding-start`.
+
+Or ask the agent to help you get set up with the Burst Your Ideas stack. In Cowork the guide skips the steps that only exist in Claude Code (workspace roots and automation routines). In Cursor, `dev` commands use the filename (`/by-init`, `/by-install-routines`) and `product` is a set of skills.
 
 ## Contents
 
 ```
 .claude-plugin/plugin.json
 .claude-plugin/marketplace.json                 Own marketplace `byideas`
+.cursor-plugin/plugin.json                      Cursor manifest
+.cursor-plugin/commands/byideas-onboarding-start.md
 commands/start.md
 skills/byideas-onboarding/SKILL.md
 skills/byideas-onboarding/references/plugins.md   Plugin catalog
 skills/byideas-onboarding/references/cowork.md     Cowork variants of each step
+skills/byideas-onboarding/references/cursor.md     Cursor variants of each step
 skills/byideas-onboarding/references/spree.md     Spree skills and docs MCP
 ```
 
